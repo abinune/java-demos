@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<p>Please input a number.</p>
+
+<input id="demo1" type="text">
+<input id="demo2" type="text">
+
+<script>
+function myFunction()
+{
+var x=document.getElementById("demo1").value;
+var y=document.getElementById("demo2").value;
+
+if(x==""||isNaN(x)&& y=="" || isNaN(y))
+	{
+	alert("Not Numeric");
+	}
+	else
+	{
+		var result;
+		result = Number(x) + Number(y);
+		alert("The result is " + result);
+	}
+
+}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+</body>
+</html> 
